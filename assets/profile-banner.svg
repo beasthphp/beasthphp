@@ -1,0 +1,48 @@
+<svg width="1200" height="330" viewBox="0 0 1200 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="160" y1="80" x2="1035" y2="245" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58A6FF"/>
+      <stop offset="0.55" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#3FB950"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feComposite in="blur" in2="SourceGraphic" operator="out" result="glow"/>
+      <feColorMatrix in="glow" type="matrix" values="0.345 0 0 0 0.02  0 0.651 0 0 0.36  0 0 1 0 1  0 0 0 .35 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M 38 0 L 0 0 0 38" fill="none" stroke="#30363D" stroke-width="1" opacity="0.32"/>
+    </pattern>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="328" rx="24" fill="url(#bg)" stroke="#30363D" stroke-width="2"/>
+  <rect x="2" y="2" width="1196" height="326" rx="23" fill="url(#grid)" opacity="0.7"/>
+
+  <circle cx="1030" cy="40" r="160" fill="#58A6FF" opacity="0.055"/>
+  <circle cx="1110" cy="290" r="150" fill="#3FB950" opacity="0.045"/>
+
+  <rect x="76" y="59" width="5" height="213" rx="2.5" fill="url(#accent)" filter="url(#glow)"/>
+
+  <text x="116" y="122" fill="#F0F6FC" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="52" font-weight="700" letter-spacing="1.5">HARSH PRATAP SINGH</text>
+  <text x="119" y="170" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="22" letter-spacing="1">Backend Systems  •  Cybersecurity  •  Applied ML</text>
+
+  <g transform="translate(118 211)">
+    <rect width="112" height="38" rx="19" fill="#161B22" stroke="#30363D"/>
+    <text x="56" y="25" text-anchor="middle" fill="#58A6FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="600">C++</text>
+  </g>
+  <g transform="translate(244 211)">
+    <rect width="112" height="38" rx="19" fill="#161B22" stroke="#30363D"/>
+    <text x="56" y="25" text-anchor="middle" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="600">Go</text>
+  </g>
+  <g transform="translate(370 211)">
+    <rect width="112" height="38" rx="19" fill="#161B22" stroke="#30363D"/>
+    <text x="56" y="25" text-anchor="middle" fill="#3FB950" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="600">Python</text>
+  </g>
+
+  <text x="930" y="250" fill="#484F58" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">github.com/beasthphp</text>
+</svg>
