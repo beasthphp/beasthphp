@@ -1,48 +1,75 @@
-<svg width="1200" height="330" viewBox="0 0 1200 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="330" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0D1117"/>
-      <stop offset="1" stop-color="#111827"/>
+      <stop offset="0.52" stop-color="#101722"/>
+      <stop offset="1" stop-color="#0B1220"/>
     </linearGradient>
-    <linearGradient id="accent" x1="160" y1="80" x2="1035" y2="245" gradientUnits="userSpaceOnUse">
+    <linearGradient id="accent" x1="86" y1="82" x2="1030" y2="286" gradientUnits="userSpaceOnUse">
       <stop stop-color="#58A6FF"/>
       <stop offset="0.55" stop-color="#7C3AED"/>
       <stop offset="1" stop-color="#3FB950"/>
     </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="18" result="blur"/>
-      <feComposite in="blur" in2="SourceGraphic" operator="out" result="glow"/>
-      <feColorMatrix in="glow" type="matrix" values="0.345 0 0 0 0.02  0 0.651 0 0 0.36  0 0 1 0 1  0 0 0 .35 0"/>
-      <feBlend in="SourceGraphic" mode="screen"/>
-    </filter>
-    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
-      <path d="M 38 0 L 0 0 0 38" fill="none" stroke="#30363D" stroke-width="1" opacity="0.32"/>
+    <linearGradient id="fade" x1="670" y1="60" x2="1140" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58A6FF" stop-opacity="0.16"/>
+      <stop offset="0.55" stop-color="#7C3AED" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#3FB950" stop-opacity="0.03"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#30363D" stroke-width="1" opacity="0.26"/>
     </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
   </defs>
 
-  <rect x="1" y="1" width="1198" height="328" rx="24" fill="url(#bg)" stroke="#30363D" stroke-width="2"/>
-  <rect x="2" y="2" width="1196" height="326" rx="23" fill="url(#grid)" opacity="0.7"/>
+  <rect x="1" y="1" width="1198" height="358" rx="26" fill="url(#bg)" stroke="#30363D" stroke-width="2"/>
+  <rect x="2" y="2" width="1196" height="356" rx="25" fill="url(#grid)"/>
 
-  <circle cx="1030" cy="40" r="160" fill="#58A6FF" opacity="0.055"/>
-  <circle cx="1110" cy="290" r="150" fill="#3FB950" opacity="0.045"/>
+  <ellipse cx="982" cy="128" rx="300" ry="210" fill="url(#fade)"/>
+  <circle cx="1050" cy="90" r="84" fill="#58A6FF" opacity="0.05" filter="url(#softGlow)"/>
+  <circle cx="1090" cy="285" r="98" fill="#3FB950" opacity="0.035" filter="url(#softGlow)"/>
 
-  <rect x="76" y="59" width="5" height="213" rx="2.5" fill="url(#accent)" filter="url(#glow)"/>
-
-  <text x="116" y="122" fill="#F0F6FC" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="52" font-weight="700" letter-spacing="1.5">HARSH PRATAP SINGH</text>
-  <text x="119" y="170" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="22" letter-spacing="1">Backend Systems  •  Cybersecurity  •  Applied ML</text>
-
-  <g transform="translate(118 211)">
-    <rect width="112" height="38" rx="19" fill="#161B22" stroke="#30363D"/>
-    <text x="56" y="25" text-anchor="middle" fill="#58A6FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="600">C++</text>
-  </g>
-  <g transform="translate(244 211)">
-    <rect width="112" height="38" rx="19" fill="#161B22" stroke="#30363D"/>
-    <text x="56" y="25" text-anchor="middle" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="600">Go</text>
-  </g>
-  <g transform="translate(370 211)">
-    <rect width="112" height="38" rx="19" fill="#161B22" stroke="#30363D"/>
-    <text x="56" y="25" text-anchor="middle" fill="#3FB950" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="600">Python</text>
+  <g opacity="0.9">
+    <circle cx="76" cy="58" r="6" fill="#FF7B72"/>
+    <circle cx="97" cy="58" r="6" fill="#D29922"/>
+    <circle cx="118" cy="58" r="6" fill="#3FB950"/>
+    <text x="148" y="64" fill="#484F58" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15">portfolio.sh</text>
   </g>
 
-  <text x="930" y="250" fill="#484F58" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">github.com/beasthphp</text>
+  <rect x="74" y="92" width="5" height="194" rx="2.5" fill="url(#accent)"/>
+
+  <text x="112" y="148" fill="#F0F6FC" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="54" font-weight="700" letter-spacing="1.2">HARSH PRATAP SINGH</text>
+  <text x="115" y="193" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="21" letter-spacing="0.8">Backend Engineering  •  Cybersecurity  •  Applied ML</text>
+
+  <text x="115" y="238" fill="#58A6FF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="17">~/portfolio $</text>
+  <text x="247" y="238" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="17">build --secure --reliable --useful</text>
+
+  <g transform="translate(115 262)">
+    <rect width="104" height="36" rx="18" fill="#161B22" stroke="#30363D"/>
+    <text x="52" y="24" text-anchor="middle" fill="#58A6FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="600">C++</text>
+  </g>
+  <g transform="translate(232 262)">
+    <rect width="116" height="36" rx="18" fill="#161B22" stroke="#30363D"/>
+    <text x="58" y="24" text-anchor="middle" fill="#3FB950" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="600">Python</text>
+  </g>
+  <g transform="translate(361 262)">
+    <rect width="112" height="36" rx="18" fill="#161B22" stroke="#30363D"/>
+    <text x="56" y="24" text-anchor="middle" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="600">Linux</text>
+  </g>
+  <g transform="translate(486 262)">
+    <rect width="128" height="36" rx="18" fill="#161B22" stroke="#30363D"/>
+    <text x="64" y="24" text-anchor="middle" fill="#58A6FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="600">FastAPI</text>
+  </g>
+
+  <g transform="translate(854 118)" opacity="0.9">
+    <rect width="272" height="138" rx="18" fill="#0D1117" fill-opacity="0.72" stroke="#30363D"/>
+    <text x="24" y="36" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">engineering.focus</text>
+    <text x="24" y="67" fill="#58A6FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">01</text>
+    <text x="58" y="67" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">backend systems</text>
+    <text x="24" y="94" fill="#7C3AED" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">02</text>
+    <text x="58" y="94" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">security tooling</text>
+    <text x="24" y="121" fill="#3FB950" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">03</text>
+    <text x="58" y="121" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">applied ML</text>
+  </g>
 </svg>
